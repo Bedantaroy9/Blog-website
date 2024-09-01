@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC:wght@100..400&display=swap');
+ 
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Playwrite AU VIC", cursive;
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 1rem;
+}
+.header{
+    height: 70px;
+}
+.headercontent{
+    max-width: 750px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.logoicon{
+    height: 1rem;
+    width: 1rem;
+}
+
+.logo{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+    gap: 0.2rem;
+}
+
+.nav{
+    display: none;
+    gap: 0.9rem;
+}
+
+@media screen and (min-width: 600px) {
+    .nav{
+        display: flex;
+    }
+}
+
+.navlink{
+    color: black;
+    font-size: 1rem;
+    transform: color 0.1s;
+}
+
+.navlink:hover {
+    color: blue;
+}
+
+.contact{
+    display: none;
+    height: 1.3rem;
+    width: 5rem;
+    background-color: blue;
+    color: white;
+    border-radius: 0.2rem;
+    padding: 0.4rem;
+    font-size: 0.8rem;
+    transform: all 0.1s;
+}
+
+@media (min-width: 600px) {
+    .contact{
+        display: block;
+    }
+}
+
+
+.contact:hover{
+    background-color: rgb(15, 128, 235);
+}
+
+.menubutton{
+    display: none;
+    border: none;
+    background-color: antiquewhite;
+}
+
+@media screen and (max-width: 600px) {
+    .menubutton{
+        display: block;
+    }
+}
+
+.menulogo{
+    height: 0.6rem;
+    width: 0.6rem;
+}
+
+.mainsection{
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0.8rem;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.leftcontent{
+    text-align: center;
+    animation: slidefromleft 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes slidefromleft {
+
+    0%{
+       opacity: 0;
+       transform: translatex(-100%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }  
+}
+
+.sectonlebel{
+    font-size: 1rem;
+    color: rgb(77, 77, 255);
+    font-weight: 0.2rem;    
+}
+
+.sectiontitle{
+    font-size: 1.5rem;
+    padding: 0.3rem;
+    font-weight: bold;
+}
+
+.sectiondesc{
+    color: rgb(7, 3, 3);
+    font-size: 1rem;
+}
+
+.classbutton{
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.startbutton, .tourbutton{
+    height: 1.5rem;
+    width: 5rem;
+    background-color: blue;
+    color: white;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+    font-size: 0.8rem;
+    transform: all 0.1s;  
+    text-align: center;
+}
+
+.tourbutton{
+    background-color: rgb(143, 43, 236);
+}
+.startbutton:hover {
+    background-color: rgb(63, 63, 255);
+}
+.tourbutton:hover {
+    background-color: rgb(173, 85, 255);
+}
+
+.rightcontent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagecontainer{
+    border: none;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 60vh;
+}
+
+.sectionimage{
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    .mainsection{
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .leftcontent{
+        max-width: 50%;
+        text-align: left;
+    }
+    .sectiontitle{
+        padding-left: 0;
+    }
+    .classbutton{
+        justify-content: start;
+        padding-left: 0;
+    }
+}
+
+.companycontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    animation: slidefromleft 1s ease forwards;
+}
+
+.companygrid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    margin-top: 0.4rem;
+    margin-bottom: 2rem;
+}
+
+.companylogo{
+    font-size: 0.3rem;
+}
+
+.img{
+    height: 0.8rem;
+    background-color: antiquewhite;
+}
+.h2{
+    font-size: 1rem;
+}
+
+.logotextt{
+    font-size: 0.5rem;
+}
+@media screen and (min-width: 600px) {
+    .companygrid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.featurescontainer{
+    background-color: aliceblue;
+    padding: 2rem 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.featurescontent{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.maintitle{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.des{
+    color: grey;
+    font-size: 1rem;
+}
+
+.maininfo{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.featuresgrid{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2 , 1fr);
+    margin-top: 1.5rem;
+}
+
+
+.featureslogo{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.iconcontainer{
+    background-color: white;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featurescard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    padding: 1rem;
+    border-radius: 1rem;
+    gap: 1rem;
+}
+
+.featuretitle, .featuredesc{
+ color: white;
+}
+
+.featurescard:nth-child(2){
+    background-color: rgb(250, 187, 93);
+}
+.featurescard:nth-child(3){
+    background-color: blue;
+}
+.featurescard:nth-child(4){
+    background-color: orangered;
+}
+.featurescard:nth-child(5){
+    background-color: palevioletred;
+}
+.featurescard:nth-child(6){
+    background-color: violet;
+}
+
+.featureinfo{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.featuretitle{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+@media (max-width: 600px) {
+    .featuresgrid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.testimonialcontainer{
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.testimonialcontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.testimonialtitle{
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+.testimonialgrid{
+    display: grid;
+    grid-template-columns: repeat(3,230px);
+    gap: 1.6rem;
+}
+@media (max-width: 600px) {
+    .testimonialgrid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.testimonialcard{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    gap: 1rem;
+    transition: transform 0.3s ease;
+}
+ 
+.testimonialcard:hover{
+    transform: scale(1.05);
+    border: 1px solid blue;
+}
+
+.testimonialimg img{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.testimonialtext{
+    font-size: 0.7rem;
+}
+
+.testimonialdetails h3{
+    font-size: 1rem;
+    color: blue;
+}
+
+.testimonialdetails p{
+    font-size: 0.7rem;
+}
+
+.newscontainer{
+    max-width: 1200px;
+    height: 38vh;
+    padding: 0;
+}
+
+.newscontent{
+    display: flex;
+    background-color: aliceblue;
+    height: 100%;
+    width: 100%;
+    margin: 0  auto;
+    border-radius: 1rem;
+}
+
+.leftpart{
+    height: 100%;
+    width: 50%;
+    position: relative;
+    display: none;
+}
+.leftpart img{
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.rightpart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 2rem;
+    gap: 1rem;
+    width: 95%;
+}
+
+.newtitle{
+    font-size: 1rem;
+    font-weight: bold;
+    color: blue;
+    /* align-items: left; */
+    text-align: left;
+}
+
+.newsdec{
+    text-align: left;
+    font-size: 0.7rem;
+}
+
+.newsform{
+    display: flex;
+    align-items: left;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+}
+
+.newsemail{
+  padding: 0.5rem;
+  border: 1px solid rgb(253, 232, 232);
+  
+}
+.newsemail:focus{
+    border-color: rgb(70, 9, 236);
+    box-shadow: rgb(11, 13, 15) 0px 20px 30px -10px;
+}
+.newsend{
+    background-color: blue;
+    padding: 0.5rem;
+    width: 90px;
+    border: none;
+    border-radius: 0.2rem;
+    color: white;
+    
+}
+
+.newsend:hover{
+    background-color: rgb(67, 67, 253);
+}
+
+.privacy{
+ padding: 0 3rem;
+ font-size: 0.52rem;
+ text-align: left;
+}
+.newslink{
+    text-decoration: underline;
+    color: blue;
+}
+
+@media screen and (min-width:600px) {
+    .leftpart{
+        display: block;
+    }
+    .newscontainer{
+        padding: 2rem;
+    }
+    .newscontent{
+        width: 70%;
+    }
+    .rightpart{
+        width: 50%;
+    }
+    .newtitle{
+        font-size: 1.5rem;
+    }
+}
+
+.footercontainer{
+ margin: 0 auto;
+ padding: 0 2rem;
+ display: flex;
+ flex-direction: column;
+ max-width: 1200px;
+}
+
+.footer{
+   max-width: 1200px;
+   padding: 2rem;
+   display: flex;
+   text-align: left;
+   justify-content: space-between;
+}
+
+.footertop{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.imgf{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.logolink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.complogo{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: -1rem;
+}
+.socialicon{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.fillertext{
+    font-size: 1rem;
+    color: rgb(158, 154, 154);
+}
+
+.footergrids{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 7rem;
+    padding: 1rem;
+}
+
+.footergridheading{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.7rem;
+}
+
+ul{
+   list-style: none;
+}
+
+.footerlink{
+    font-size: 1rem;
+    color: rgb(112, 105, 105);
+}
+
+.footerlinklist{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.socials{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.footercopy{
+    border-top: 1px solid rgb(53, 52, 52);
+    color: rgb(53, 52, 52);
+}
+
+@media screen and (max-width: 1000px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .footergrids{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
