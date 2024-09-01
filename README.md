@@ -6,6 +6,9 @@ This blog is dedicated to guiding students as they prepare for their future. It 
 Content Overview:
 
 Career Guidance: Articles and guides on various career paths, including detailed information about job roles, industries, required skills, and how to get started.
+
 Educational Resources: Information on higher education options, scholarships, online courses, and other learning opportunities that can help students advance their academic and professional goals.
+
 Personal Development: Tips and strategies for building essential life skills, such as time management, communication, leadership, and financial literacy.
+
 Motivation and Inspiration: Stories of successful individuals, motivational content, and advice on overcoming challenges and staying focused on long-term goals.
